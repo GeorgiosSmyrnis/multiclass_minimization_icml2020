@@ -54,7 +54,9 @@ For the Fashion-MNIST experiments (Table 3), run the following two commands:
   - `python result_aggregation_mnist.py ./results_one_vs_all_fashion extra`
 
 The results can be found as follows ("simple" corresponds to the method of
-Section 4.2, and "extra" to that of Section 5.1):
+Section 4.2 with the Heuristic Minimization, and "extra" to the use of the
+Stable Minimization of Section 5.1, as explained in the experimental section
+of the paper):
   - Table 1: `./results_one_vs_all_mnist/results_simple/`
   - Table 2: `./results_one_vs_all_mnist/results_extra/`
   - Table 3: `./results_one_vs_all_fashion/results_extra/`
