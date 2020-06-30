@@ -80,7 +80,7 @@ can then be saved manually, in the desired format):
 
 ## Further Details - Requirements:
 These experiments were run using Python 3.7.6, on an Ubuntu 18.04 OS.
-The following packages were installed on the testing environment:
+The following packages were installed on the testing environment and used in the provided code:
   - numpy:        v1.18.1
   - scipy:        v1.3.2
   - tensorflow:   v1.15.0
@@ -89,10 +89,7 @@ The following packages were installed on the testing environment:
   - pandas:       v0.25.3
   - matplotlib:   v3.1.3
 
-The above are direct dependencies of the code presented. All of their
-dependencies were installed in the testing environment, as well as:
-  - scikit-learn: v0.22.1
-
+All of the dependencies of the above were also installed in the testing environment, as well as scikit-learn, v0.22.1.
 Installing these packages, along with their respective dependencies, leads to
 an environment equivalent to the one on which the experiments were run. Note
 that this is not a strict requirement; it might be possible to run the above
