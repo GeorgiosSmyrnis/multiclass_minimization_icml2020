@@ -13,7 +13,7 @@ from tqdm import tqdm
 
 def simplify_matrix_dynamic(counts, neurons_orig, num_to_keep, rep_dim):
     """
-    This function performs the minimization method introduced, based on Algorithm 1.
+    This function performs the Stable Minimization Method (Algorithm 3).
     Arguments:
         counts: The number of appearances, for each vertex of the polytope.
         neurons_orig: The original neurons, the Minkowski sum of which is the polytope.
@@ -99,7 +99,7 @@ def simplify_matrix_dynamic(counts, neurons_orig, num_to_keep, rep_dim):
 
 def simplify_network_multiclass(oracle_model, dataset, labels, w1, b1, w2, b2, perc_to_keep_list):
     """
-    This function make simplifies the network provided, using the second method.
+    This function simplifies the network provided, using the 1-vs-all method.
     Arguments:
         oracle_model: Model layers before the second-to-last.
         dataset: Training data used for the algorithm.

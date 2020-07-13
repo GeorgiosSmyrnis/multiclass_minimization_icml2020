@@ -13,7 +13,7 @@ from tqdm import tqdm
 
 def simplify_matrix(input_vertices_list, num_to_keep):
     """
-    This function simplifies a neuron weight matrix, using the simple method described in the literature.
+    This function simplifies a neuron weight matrix, using the Heuristic Method (Algorithm 1).
     Arguments:
         input_vertices_list: Sorted list of input vertices
         num_to_keep: Number of neurons to keep in the final network.
@@ -45,7 +45,7 @@ def simplify_matrix(input_vertices_list, num_to_keep):
 
 def simplify_network_multiclass(oracle_model, dataset, labels, w1, b1, w2, b2, perc_to_keep_list):
     """
-    This function make simplifies the network provided, using the second method.
+    This function simplifies the network provided, using the 1-vs-all method.
     Arguments:
         oracle_model: Model layers before the second-to-last.
         dataset: Training data used for the algorithm.
