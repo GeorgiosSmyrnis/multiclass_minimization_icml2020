@@ -23,7 +23,7 @@ def simplify_matrix(input_vertices_list, num_to_keep):
 
     # Failsafe for rounding errors.
     if(num_to_keep == 0):
-        return np.zeros((0,input_vertices_list[0]))
+        num_to_keep = 1
 
     # Define output matrix
     output = np.zeros((num_to_keep, input_vertices_list[0].shape[0]))

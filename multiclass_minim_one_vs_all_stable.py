@@ -28,7 +28,7 @@ def simplify_matrix_dynamic(counts, neurons_orig, num_to_keep, rep_dim):
 
     # Failsafe for rounding errors.
     if(num_to_keep == 0):
-        return np.zeros((0,rep_dim))
+        num_to_keep = 1
 
     # Define matrix which contains the binary labels of the neurons we will keep.
     output_ind = np.zeros((num_to_keep, neurons_orig.shape[0]), dtype=bool)
